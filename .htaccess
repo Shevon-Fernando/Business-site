@@ -1,0 +1,12 @@
+# noontech - URL Rewriting and Routing Config
+RewriteEngine On
+
+# Redirect /graphic-design to graphic-design.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^graphic-design$ graphic-design.php [L,QSA]
+
+# Redirect /admin to admin.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^admin$ admin.php [L,QSA]
